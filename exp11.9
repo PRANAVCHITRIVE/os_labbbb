@@ -1,0 +1,17 @@
+GNU nano 7.2                                                                          leapyear.sh                                                                                    
+#!/bin/bash
+
+read -p "Enter a year: " year
+
+if [ $((year % 4)) -ne 0 ]
+then
+    echo "Not a leap year"
+elif [ $((year % 100)) -ne 0 ]
+then
+    echo "Leap year"
+elif [ $((year % 400)) -eq 0 ]
+then
+    echo "Leap year"
+else
+    echo "Not a leap year"
+fi
