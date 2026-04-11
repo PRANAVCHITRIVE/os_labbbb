@@ -1,0 +1,16 @@
+#!/bin/bash
+
+echo " Enter Country name"
+
+
+read -p "Enter the country name: " country
+
+if [ "$country" = "India" ]
+then
+    echo "The country name is India"
+elif [ "$country" = "Nepal" ]
+then
+    echo "The country name is Nepal"
+else
+    echo "The entered country name is not matching with India or Nepal"
+fi
